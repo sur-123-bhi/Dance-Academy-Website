@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+div#classinfoContainer{
+    background: url(./static/classbackground.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 150vh;
+    padding-left: 32%;
+}
+
+div#classinfoContainer h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 115px;
+    color: white;
+    text-shadow: 2px 2px black;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+
+div.box{
+    border: 3px solid rgb(192, 140, 140);
+    border-radius: 10px;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 500px;
+        height: 100px;
+        margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box h3{
+    color: rgb(166, 184, 241);
+    text-shadow: 1px 1px black;
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+div.box p{
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}

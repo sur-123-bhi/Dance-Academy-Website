@@ -1,0 +1,72 @@
+extends base.pug
+block scripts 
+ script(src='../static/index.js')
+block style 
+ style 
+  include ../static/home.css
+  include ../static/camp.css  
+block content  
+ div#image 
+  img(src="/static/campimg.png")
+ div#campSummery 
+  h1 SUMMER CAMP 2023
+  p We offer an extensive summer program for dancers of all ages. Whether you are a serious dancer looking to refine your technique or a young dancer looking for some summer fun, we have got you covered and will keep you moving! We offer several themed camps throughout July and August for ages 3+. Camp includes dancing, games, arts & crafts, snack, and story time for our tiny dancers! Weather permitting, snack time will be outside in the park.  We also offer 6-week class sessions.
+ div#image2
+  img(src="/static/campimage.png")
+ div#campDetails
+  div.detail 
+   h2 Under the Sea Acro Camp: 9:00a-12:00p (Age 5-6 years)
+   h3 JULY 24 TO JULY 28
+   p Join us for a magical mermaid adventure as we deep dive and tumble under the sea, learning acro foundations and fun tricks. Camp will include daily themed-crafts, games and lots of dancing!
+  div.detail 
+   h2 Into the Jungle, Hip Hop & Tumble: 9:00a-12:00p (Age 5-6 years) 
+   h3 JULY 31 TO AUGUST 4
+   p In this jungle themed camp, dancers will improve their tumbling skills and learn new tricks while being introduced to basic Hip Hop dance! Themed crafts, games, and dancing are all part of the fun!
+  div.detail 
+   h2 Fairytale Friends: 9:00a-12:00p (Age 5-6 years) 
+   h3 AUGUST 7 TO AUGUST 11
+   p Enter the magical world of fairytale friends! Unicorns, mermaids, & fairies will enchant our campers imaginations. Our days will include various dance styles including ballet, jazz, & tumbling. Campers will enjoy games, themed crafts, story time, dancing & lots of fun!
+  div.detail 
+   h2 Let’s Get Fancy: 9:00a-12:00p (Age 5-6 years)
+   h3 AUGUST 28 TO AUGUST 30
+   p For the dancers that love to flip, tumble and all things fancy! This camp mixes Ballet, and our Pre- JR Acro program with all the fancy things dancers love; rainbows, unicorns, sparkles & more!  Daily themed crafts and fun games are all included during this fancy week!
+  div.detail 
+   h2 Competitive Acro Team: Workshop: 4:30-7:30p (Teens) 
+   h3 AUGUST 11 TO AUGUST 16
+   p For dancers on our Acro Competition Team or interested in joining. During this workshop dancers will work on flexibility, conditioning, reviewing tricks and technique. Dancers interested in joining our Team for the 23-24 Dance Season will receive a progression sheet with the required skills they need for the Team and will be evaluated based off the progression sheet.
+  div.register
+   button(class="btn" onclick="openForm()")
+    | Register Now
+  div.popup#myform
+   <form class="form", method="post", action="/summercamp">
+    button(class="closebtn" onclick="closeForm()")
+     | &times
+    div.formdetail 
+     <label for="name">Dancer's Name</label>
+     <input type="text" placeholder="Please Enter Full Name" name="name" required>
+    div.formdetail  
+     <label for="age">Enter His/Her Age</label>
+     <input type="age" placeholder="Enter Your Age" name="age" required>
+    div.formdetail
+     <label for="name">Parent/Guardian's Name</label>
+     <input type="text" placeholder="Please Enter Full Name" name="parentname" required>
+    div.formdetail
+     <label for="address">Enter Address</label>
+     <input type="text" placeholder="Enter Your Full Address" name="address" required>
+    div.formdetail 
+     <label for="city">Enter Current City</label>
+     <input type="text" placeholder="Enter Your City" name="city" required>
+    div.formdetail 
+     <label for="state">Enter State</label>
+     <input type="text" placeholder="State" name="state" required>
+    div.formdetail 
+     <label for="postalcode">Enter Zip/Postal Code</label>
+     <input type="postalcode" placeholder="Enter Your Code" name="postal code" required>
+    div.formdetail 
+     <label for="country">Enter Current Country</label>
+     <input type="text" placeholder="Enter Your Country" name="country" required>
+    div.formdetail 
+     <label for="camp">Which Camp You Want To Join</label>
+     <input type="text" placeholder="Enter Camp Name" name="camp" required>     
+    div 
+     <button class="submitform" onclick="closeForm()">Submit</button> 

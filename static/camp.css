@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+div#image{
+    height: 400px;
+}
+
+div#image img{
+    height: inherit;
+    width: 1350px;
+}
+
+div#campSummery h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+div#campSummery p{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#image2{
+    display: flex;
+    justify-content: center;
+}
+
+div#campDetails{
+    margin-top: 50px;
+}
+
+div.detail h2{
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+div.detail h3{
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkolivegreen;
+    padding-bottom: 15px;
+}
+
+div.detail p{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+div.register{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.btn{
+    padding: 15px 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup{
+    position: absolute;
+    top: 330%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+    display: none;
+    padding: 20px 30px;
+    background: rgb(199, 199, 235);
+    z-index: 2;
+    box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.form{
+    max-width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+  
+}
+
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.formdetail{
+    margin: 15px 0px;
+}
+
+.formdetail input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+.formdetail label{
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: bolder;
+}
+
+.submitform{
+    margin-top: 30px;
+    width: 50%;
+    height: 60px;
+    margin-left: 5%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: red;
+    color: white;
+    text-shadow: 2px 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
